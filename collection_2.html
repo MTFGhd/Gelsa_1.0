@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelsa Library</title>
+    <link rel="shortcut icon" href="image/GeslsaBk-removebg-.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="rate.css">
+    <link rel="stylesheet" href="vide.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="videos/galaxy.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="content">
+                 <nav>
+                    <div class="nav-content">
+                        <div class="logo">    
+            
+                         <span id="Gel"> 📚 Gelsa Library</span>
+            
+                        </div>
+            
+                        <ul class="nav-links">
+            
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="collection.html" class="activ">Collection</a> </li>
+                            <li><a href="About.html">About</a></li>
+                       
+                        </ul>
+                    </div>
+                 </nav>
+                 <br>
+                <h1> Our <span class="text-gradient">Collection</span> of books</h1>
+                <br><br>
+    
+            <div class="books-grid">
+                <div class="card book-card">
+                    <img src="image/Awaken_Genius.jpg" alt="The Alchemist" class="book-cover">
+                    <div class="book-info">
+                        <h2>Awaken your Genius</h2><hr>
+                        <p class="author">by Paulo Coelho</p><hr>
+                        <button>
+                            <svg
+                              height="24"
+                              width="24"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M0 0h24v24H0z" fill="none"></path>
+                              <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                            <a href="Read/awaken-your-genius.pdf">Read</a>
+                          
+                            </button>
+                            <span class="rat text-warning">Rate It</span>
+                            <div class="rating">
+                              <input value="1" name="rate-1" id="star1-5" type="radio">
+                              <label title="text" for="star1-5"></label>
+                              <input value="2" name="rate-1" id="star1-4" type="radio">
+                              <label title="text" for="star1-4"></label>
+                              <input value="3" name="rate-1" id="star1-3" type="radio">
+                              <label title="text" for="star1-3"></label>
+                              <input value="4" name="rate-1" id="star1-2" type="radio">
+                              <label title="text" for="star1-2"></label>
+                              <input value="5" name="rate-1" id="star1-1" type="radio">
+                              <label title="text" for="star1-1"></label>
+                            </div>
+                       
+                    </div>
+                </div>
+                <div class="card book-card">
+                    <img src="image/munachiso-nweke-edited-text-final-sapiens.jpg" alt="Sapiens" class="book-cover" style="height: 100%" >
+                    <div class="book-info">
+                        <h2>Sapiens</h2><hr>
+                        <p class="author">by Yuval Noah Harari</p><hr>
+                        <button>
+                            <svg
+                              height="24"
+                              width="24"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M0 0h24v24H0z" fill="none"></path>
+                              <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                            <a href="Read/sapiens.pdf">Read</a>
+                          
+                        </button>
+                        <span class="rat text-warning">Rate It</span>
+                        <div class="rating">
+                          <input value="1" name="rate-21" id="star21-5" type="radio">
+                          <label title="text" for="star21-5"></label>
+                          <input value="2" name="rate-21" id="star21-4" type="radio">
+                          <label title="text" for="star21-4"></label>
+                          <input value="3" name="rate-21" id="star21-3" type="radio">
+                          <label title="text" for="star21-3"></label>
+                          <input value="4" name="rate-21" id="star21-2" type="radio">
+                          <label title="text" for="star21-2"></label>
+                          <input value="5" name="rate-21" id="star21-1" type="radio">
+                          <label title="text" for="star1-1"></label>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="card book-card">
+                    <img src="image/becoming_172469.jpg" alt="Becoming" class="book-cover">
+                    <div class="book-info">
+                        <h2>Becoming</h2><hr>
+                        <p class="author">by Michelle Obama</p><hr>
+                        <button>
+                            <svg
+                              height="24"
+                              width="24"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M0 0h24v24H0z" fill="none"></path>
+                              <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                            <a href="Read/becoming.pdf">Read</a>
+                          
+                        </button>
+                        <span class="rat text-warning">Rate It</span>
+                        <div class="rating">
+                          <input value="1" name="rate-22" id="star22-5" type="radio">
+                          <label title="text" for="star22-5"></label>
+                          <input value="2" name="rate-22" id="star22-4" type="radio">
+                          <label title="text" for="star22-4"></label>
+                          <input value="3" name="rate-22" id="star22-3" type="radio">
+                          <label title="text" for="star22-3"></label>
+                          <input value="4" name="rate-22" id="star22-2" type="radio">
+                          <label title="text" for="star22-2"></label>
+                          <input value="5" name="rate-22" id="star22-1" type="radio">
+                          <label title="text" for="star22-1"></label>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="card book-card">
+                    <img src="image/the power of now_38451.jpg" alt="The Power of Now" class="book-cover">
+                    <div class="book-info">
+                        <h2>The Power of Now</h2><hr>
+                        <p class="author">by Eckhart Tolle</p><hr>
+                        <button>
+                            <svg
+                              height="24"
+                              width="24"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M0 0h24v24H0z" fill="none"></path>
+                              <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                            <a href="Read/the-power-of-now.pdf">Read</a>
+                          
+                        </button>
+                        <span class="rat text-warning">Rate It</span>
+                        <div class="rating">
+                          <input value="1" name="rate-12" id="star12-5" type="radio">
+                          <label title="text" for="star12-5"></label>
+                          <input value="2" name="rate-12" id="star12-4" type="radio">
+                          <label title="text" for="star12-4"></label>
+                          <input value="3" name="rate-12" id="star12-3" type="radio">
+                          <label title="text" for="star12-3"></label>
+                          <input value="4" name="rate-12" id="star12-2" type="radio">
+                          <label title="text" for="star12-2"></label>
+                          <input value="5" name="rate-12" id="star12-1" type="radio">
+                          <label title="text" for="star12-1"></label>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="card book-card">
+                    <img src="image/giving_67219.jpg" alt="The Subtle Art of Not Giving a F***" class="book-cover">
+                    <div class="book-info">
+                        <h2>The Subtle Art </h2><hr>
+                        <p class="author">by Mark Manson</p><hr>
+                        <button>
+                            <svg
+                              height="24"
+                              width="24"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M0 0h24v24H0z" fill="none"></path>
+                              <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                            <a href="Read/the-subtle-art-of-not-giving-a-fuck.pdf">Read</a>
+                          
+                        </button>
+                        <span class="rat text-warning">Rate It</span>
+                        <div class="rating">
+                          <input value="1" name="rate-23" id="star23-5" type="radio">
+                          <label title="text" for="star23-5"></label>
+                          <input value="2" name="rate-23" id="star23-4" type="radio">
+                          <label title="text" for="star23-4"></label>
+                          <input value="3" name="rate-23" id="star23-3" type="radio">
+                          <label title="text" for="star23-3"></label>
+                          <input value="4" name="rate-23" id="star23-2" type="radio">
+                          <label title="text" for="star23-2"></label>
+                          <input value="5" name="rate-23" id="star23-1" type="radio">
+                          <label title="text" for="star23-1"></label>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="card book-card">
+                    <img src="image/daring.jpg" alt="Daring Greatly" class="book-cover">
+                    <div class="book-info">
+                        <h2>Daring Greatly</h2><hr>
+                        <p class="author">by Brené Brown</p><hr>
+                        <button>
+                            <svg
+                              height="24"
+                              width="24"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M0 0h24v24H0z" fill="none"></path>
+                              <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                            <a href="Read/daring-greatly.pdf">Read</a>
+                          
+                        </button>
+                        <span class="rat text-warning">Rate It</span>
+                        <div class="rating">
+                          <input value="1" name="rate-11" id="star11-5" type="radio">
+                          <label title="text" for="star11-5"></label>
+                          <input value="2" name="rate-11" id="star11-4" type="radio">
+                          <label title="text" for="star11-4"></label>
+                          <input value="3" name="rate-11" id="star11-3" type="radio">
+                          <label title="text" for="star11-3"></label>
+                          <input value="4" name="rate-11" id="star11-2" type="radio">
+                          <label title="text" for="star11-2"></label>
+                          <input value="5" name="rate-11" id="star11-1" type="radio">
+                          <label title="text" for="star11-1"></label>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="card book-card">
+                    <img src="image/the_hobbit.jpg" alt="The Hobbit" class="book-cover">
+                    <div class="book-info">
+                        <h2>The Hobbit</h2><hr>
+                        <p class="author">by J.R.R. Tolkien</p><hr>
+                        <button>
+                            <svg
+                              height="24"
+                              width="24"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M0 0h24v24H0z" fill="none"></path>
+                              <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                            <a href="Read/the-hobbit.pdf">Read</a>
+                          
+                        </button>
+                        <span class="rat text-warning">Rate It</span>
+                        <div class="rating">
+                          <input value="1" name="rate-10" id="star10-5" type="radio">
+                          <label title="text" for="star10-5"></label>
+                          <input value="2" name="rate-10" id="star10-4" type="radio">
+                          <label title="text" for="star10-4"></label>
+                          <input value="3" name="rate-10" id="star10-3" type="radio">
+                          <label title="text" for="star10-3"></label>
+                          <input value="4" name="rate-10" id="star10-2" type="radio">
+                          <label title="text" for="star10-2"></label>
+                          <input value="5" name="rate-10" id="star10-1" type="radio">
+                          <label title="text" for="star10-1"></label>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="card book-card">
+                    <img src="image/5AM_182068.jpg" alt="The 5 AM Club" class="book-cover">
+                    <div class="book-info">
+                        <h2>The 5 AM Club</h2><hr>
+                        <p class="author">by Robin Sharma</p><hr>
+                        <button>
+                            <svg
+                              height="24"
+                              width="24"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M0 0h24v24H0z" fill="none"></path>
+                              <path d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                            <a href="Read/the-5-am-club.pdf">Read</a>
+                          
+                        </button>
+                        <span class="rat text-warning">Rate It</span>
+                        <div class="rating">
+                          <input value="1" name="rate-9" id="star9-5" type="radio">
+                          <label title="text" for="star9-5"></label>
+                          <input value="2" name="rate-9" id="star9-4" type="radio">
+                          <label title="text" for="star9-4"></label>
+                          <input value="3" name="rate-9" id="star9-3" type="radio">
+                          <label title="text" for="star9-3"></label>
+                          <input value="4" name="rate-9" id="star9-2" type="radio">
+                          <label title="text" for="star9-2"></label>
+                          <input value="5" name="rate-9" id="star9-1" type="radio">
+                          <label title="text" for="star9-1"></label>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+    </div>
+       <ul class="pagination">
+           <li><a href="collection.html">«</a></li>
+           <li><a href="collection.html">1</a></li>
+           <li><a href="collection_2.html"  class="active">2</a></li>
+           <li><a href="collection_3.html">3</a></li>
+           <li><a href="collection_3.html">»</a></li>
+           </ul>
+</body>
+</html>

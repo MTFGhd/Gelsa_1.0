@@ -1,0 +1,151 @@
+html {
+    font-family: system-ui, sans-serif;
+    background: rgb(0, 0, 0);  scroll-behavior: smooth;   }
+body{
+scroll-behavior: smooth;
+padding: 0;         margin: 0;
+padding-top: 4rem;  color: white;
+}
+.parent{
+position: relative;     width: 100%;
+height: 100vh;              }
+.back-gr{
+position: absolute;   right: 0;
+bottom: 0;    z-index:-1;     width: 100%;
+}
+.cover{  position: fixed;   inset: 0 0 0 0; }
+nav {
+background: rgba(0, 0, 0, 0.719);
+backdrop-filter: blur(10px);
+position: fixed;    top: 0;       left: 0;   right: 0;
+z-index: 1000;
+}
+.nav-content {
+margin: 0 auto;      padding: 1rem 2rem; 
+display: flex;       justify-content: space-between;
+align-items: center;
+}
+.nav-links {
+display: flex;           gap: 2rem;
+list-style: none;       margin: 0;
+padding: 2.7vh;         border-radius: 8vh;
+box-shadow: 0 0 10px #727fde;
+}
+#Gel{  
+font-size: 3.77vh;     font-weight: 700;     color:#780cdd  }
+.nav-links a {
+    color: white;     text-decoration: none;
+    font-size: 3vh;     transition: color 0.3s;         }
+ .activ ,.text-gradient ,.about-section > h2{
+    background: linear-gradient(to right,#008baa,#7e42a7
+    ,#6600c5,#2a46ff,#177dc2,#008ead);
+    background-clip: text;                        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;          background-position: 0%;
+    background-size: 350%;                         font-size: 4rem;
+    animation: text-grad 3s linear infinite ;    background-position: 0%;
+  }
+.nav-links a:hover{    color: cyan;      }
+main {
+margin: auto;               padding: 1rem;
+width: 800px;               max-width: calc(100% - 2rem);    
+font-size: 20px;            line-height: 1.6;
+}
+h1 {
+    font-size: 4rem;    font-weight: 700;
+    line-height: 1;      text-align: center;     margin-bottom: 0.5em;
+}
+.text-gradient ,.about-section > h2{
+background-clip: text;                        -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;           background-size: 350%;
+animation: text-grad 3s linear infinite ;       background-position: 0%;
+}
+@keyframes text-grad {
+    from{    background-position: 0%;     }
+    to {     background-position: 350%;   }
+}
+.book-card button {
+margin-top: 20px;               display: flex;
+align-items: center;            font-family: inherit;
+cursor: pointer;                font-weight: 500;
+font-size: 17px;                padding: 0.8em 1.3em 0.8em 0.9em;
+color: white;         background: linear-gradient(to right, #1b1642, #302b63, #24243e);
+border: none;                   letter-spacing: 0.05em;
+border-radius: 16px;
+}
+  button svg {
+margin-right: 3px;               transform: rotate(30deg);
+transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+button a {
+transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+text-decoration: none;                      color: beige;
+}
+  button:hover a {     transform: translateX(7px);    }
+  button >  a{
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-clip: text;                           -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;       animation: shine 4.2s linear infinite;
+  animation-fill-mode: forwards;              -webkit-text-size-adjust: none;
+  font-weight: 700;       font-size: 16px;    text-decoration: none;
+  white-space: nowrap;                        font-family: "Poppins", sans-serif;
+  }
+@keyframes shine {
+from{  background-position: 0px;  }
+to  {  background-position: 125px; }
+}
+.subtitle {
+text-align: center;         color: rgb(224, 204, 250);
+font-size: 1.5rem;          font-weight: 500;
+margin-bottom: 1em;
+}
+.instructions {    margin-bottom: 2rem;     text-align: center;      }
+.books-grid {
+  display: grid;          gap: 2rem;         padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+}
+.book-card { background: rgba(255, 255, 255, 0);
+    border-radius: 8px;         color:lightgrey;       
+    padding: 1.5rem;            transition: transform 0.2s;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+.book-card:hover, .card:hover {   background-color: rgba(0, 0, 0, 0.3);  }
+.book-card img {
+position: relative;              left: 50%;
+transform: translateX(-50%);     height: auto;        }
+.book-info > h2{    justify-content: center;   }
+@media  (max-aspect-ratio: 16/9) {
+    .back-gr{    width: auto;    height: 100%;    }
+                                 }
+@media (min-aspect-ratio: 16/9) {
+    .back-gr{   width: 100%;      height: auto;   }      
+                                }
+@media (max-width: 600px) {
+    .nav-content {    flex-direction: column;      gap: 1rem;    } 
+    .nav-links {    font-size: 3.2vh;      gap: 2rem;     }
+    .book-card img{     height: auto;     }
+    .book-card {     padding: 1rem;      } 
+ }
+    ::-webkit-scrollbar {   width: 2vh;    }
+    ::-webkit-scrollbar-track {    background: rgb(0, 0, 0);   }
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to right,white,#008baa,#7e42a7,#6600c5,#2a46ff,#177dc2,#008ead,white);
+        border-radius: 40%;   }
+  .Explor{
+    display: block;            margin: 0 auto;
+    font-size: 1.2rem;         padding: 1rem 2.5rem;
+  border: none;                outline: none;
+  border-radius: 4rem;         cursor: pointer;       color: beige;
+  background: linear-gradient(50deg, #ff6ec4, #7873f5);
+  font-weight: 700;            transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  .Explor:active {   scale: 0.92;     }
+  .Explor:hover {
+    background: rgb(2,29,78);         color: rgb(4, 4, 38);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  }
